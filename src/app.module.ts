@@ -64,7 +64,7 @@ import { CloudinaryModule } from './cloudinary/cloudinary.module';
         type: 'postgres',
         url: configService.get<string>('DATABASE_URL'),
         entities: [Product, Category, Order, OrderItem],
-        synchronize: true,
+        synchronize: false,
         ssl: {
           rejectUnauthorized: false,
         },
